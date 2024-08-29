@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Lvlup100',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'http://lvlup100.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,15 +16,15 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'lvlup100', // Usually your GitHub org/user name.
+  projectName: 'lvlup100', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ar',
+    locales: ['en', 'ar'],
   },
 
   presets: [
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lvlup100/lvlup100/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lvlup100/lvlup100/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,21 +57,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Level up 100',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          {to: '/blog', label: 'مدونة', position: 'left'},
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/lvlup100',
             label: 'GitHub',
             position: 'right',
           },
@@ -83,25 +83,25 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              // {
+              //   label: 'Tutorial',
+              //   to: '/docs/intro',
+              // },
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Youtube',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'Instgram',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'Twitter',
+                label: 'TikTok',
                 href: 'https://twitter.com/docusaurus',
               },
             ],
@@ -115,12 +115,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/lvlup100',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Levelup 100`,
       },
       prism: {
         theme: lightCodeTheme,
